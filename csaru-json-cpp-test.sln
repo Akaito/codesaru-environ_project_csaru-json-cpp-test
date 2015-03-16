@@ -3,20 +3,59 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "csaru-json-cpp-test", "..\..\src\csaru-json-cpp-test\csaru-json-cpp-test.vcxproj", "{A34A1937-C9DC-4D49-A6E4-B175051F64CE}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A63ED612-18FB-44C4-AE9B-56EAAA6DB20C} = {A63ED612-18FB-44C4-AE9B-56EAAA6DB20C}
+		{ECEF0F23-F0F5-430E-BA61-E1F6EFF6C04C} = {ECEF0F23-F0F5-430E-BA61-E1F6EFF6C04C}
+		{0E2E7236-7116-455F-AC60-1092C4FF3F8A} = {0E2E7236-7116-455F-AC60-1092C4FF3F8A}
+		{C2BC5296-D2AE-485E-B232-BBCF5B5715B3} = {C2BC5296-D2AE-485E-B232-BBCF5B5715B3}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "csaru-container-cpp", "..\..\src\csaru-container-cpp\csaru-container-cpp-lib.vcxproj", "{A63ED612-18FB-44C4-AE9B-56EAAA6DB20C}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C2BC5296-D2AE-485E-B232-BBCF5B5715B3} = {C2BC5296-D2AE-485E-B232-BBCF5B5715B3}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "csaru-json-cpp", "..\..\src\csaru-json-cpp\csaru-json-cpp-lib.vcxproj", "{ECEF0F23-F0F5-430E-BA61-E1F6EFF6C04C}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A63ED612-18FB-44C4-AE9B-56EAAA6DB20C} = {A63ED612-18FB-44C4-AE9B-56EAAA6DB20C}
+		{C2BC5296-D2AE-485E-B232-BBCF5B5715B3} = {C2BC5296-D2AE-485E-B232-BBCF5B5715B3}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "csaru-serialization-cpp", "..\..\src\csaru-serialization-cpp\csaru-serialization-cpp-lib.vcxproj", "{0E2E7236-7116-455F-AC60-1092C4FF3F8A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A63ED612-18FB-44C4-AE9B-56EAAA6DB20C} = {A63ED612-18FB-44C4-AE9B-56EAAA6DB20C}
+		{C2BC5296-D2AE-485E-B232-BBCF5B5715B3} = {C2BC5296-D2AE-485E-B232-BBCF5B5715B3}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "csaru-core-cpp", "..\..\src\csaru-core-cpp\csaru-core-cpp-lib.vcxproj", "{C2BC5296-D2AE-485E-B232-BBCF5B5715B3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
 		Release|Win32 = Release|Win32
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{A63ED612-18FB-44C4-AE9B-56EAAA6DB20C}.Debug|Win32.ActiveCfg = Debug|Win32
-		{A63ED612-18FB-44C4-AE9B-56EAAA6DB20C}.Debug|Win32.Build.0 = Debug|Win32
-		{A63ED612-18FB-44C4-AE9B-56EAAA6DB20C}.Release|Win32.ActiveCfg = Release|Win32
-		{A63ED612-18FB-44C4-AE9B-56EAAA6DB20C}.Release|Win32.Build.0 = Release|Win32
 		{A34A1937-C9DC-4D49-A6E4-B175051F64CE}.Debug|Win32.ActiveCfg = Debug|Win32
 		{A34A1937-C9DC-4D49-A6E4-B175051F64CE}.Debug|Win32.Build.0 = Debug|Win32
 		{A34A1937-C9DC-4D49-A6E4-B175051F64CE}.Release|Win32.ActiveCfg = Release|Win32
 		{A34A1937-C9DC-4D49-A6E4-B175051F64CE}.Release|Win32.Build.0 = Release|Win32
+		{A63ED612-18FB-44C4-AE9B-56EAAA6DB20C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{A63ED612-18FB-44C4-AE9B-56EAAA6DB20C}.Debug|Win32.Build.0 = Debug|Win32
+		{A63ED612-18FB-44C4-AE9B-56EAAA6DB20C}.Release|Win32.ActiveCfg = Release|Win32
+		{A63ED612-18FB-44C4-AE9B-56EAAA6DB20C}.Release|Win32.Build.0 = Release|Win32
+		{ECEF0F23-F0F5-430E-BA61-E1F6EFF6C04C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{ECEF0F23-F0F5-430E-BA61-E1F6EFF6C04C}.Debug|Win32.Build.0 = Debug|Win32
+		{ECEF0F23-F0F5-430E-BA61-E1F6EFF6C04C}.Release|Win32.ActiveCfg = Release|Win32
+		{ECEF0F23-F0F5-430E-BA61-E1F6EFF6C04C}.Release|Win32.Build.0 = Release|Win32
+		{0E2E7236-7116-455F-AC60-1092C4FF3F8A}.Debug|Win32.ActiveCfg = Debug|Win32
+		{0E2E7236-7116-455F-AC60-1092C4FF3F8A}.Debug|Win32.Build.0 = Debug|Win32
+		{0E2E7236-7116-455F-AC60-1092C4FF3F8A}.Release|Win32.ActiveCfg = Release|Win32
+		{0E2E7236-7116-455F-AC60-1092C4FF3F8A}.Release|Win32.Build.0 = Release|Win32
+		{C2BC5296-D2AE-485E-B232-BBCF5B5715B3}.Debug|Win32.ActiveCfg = Debug|Win32
+		{C2BC5296-D2AE-485E-B232-BBCF5B5715B3}.Debug|Win32.Build.0 = Debug|Win32
+		{C2BC5296-D2AE-485E-B232-BBCF5B5715B3}.Release|Win32.ActiveCfg = Release|Win32
+		{C2BC5296-D2AE-485E-B232-BBCF5B5715B3}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
